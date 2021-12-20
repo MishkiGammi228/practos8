@@ -1,0 +1,41 @@
+﻿<Window x:Class="Lab_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="349" Width="800">
+    <Grid Margin="0,0,0,2">
+        <TextBox HorizontalAlignment="Left" x:Name="firstWorker" Height="257" Margin="28,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268"/>
+        <TextBox HorizontalAlignment="Left" x:Name="secondWorker" Height="257" Margin="333,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="30,11,0,0" Text="Первый работник" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="334,13,0,0" Text="Второй работник" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+        <TextBlock HorizontalAlignment="Left" Margin="610,46,0,0" Text="Введите данные" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="610,76,0,0" Text="Фамилия" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="surname" HorizontalAlignment="Left" Margin="680,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="610,104,0,0" Text="Имя" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="680,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="610,130,0,0" Text="Отчество" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="patronymic" HorizontalAlignment="Left" Margin="680,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="610,157,0,0" Text="Должность" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="position" HorizontalAlignment="Left" Margin="680,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="610,183,0,0" Text="Кол-во детей" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="children" HorizontalAlignment="Left" Margin="695,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
+        <TextBlock HorizontalAlignment="Left" Margin="612,208,0,0" Text="Возраст" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="age" HorizontalAlignment="Left" Margin="680,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Информация о работнике" HorizontalAlignment="Left" Margin="614,230,0,0" VerticalAlignment="Top" Click="InfoWorker_Click"/>
+        <Button Content="Копия работника" HorizontalAlignment="Left" Margin="614,256,0,0" VerticalAlignment="Top" Click="CloneWorker_Click"/>
+        <Button Content="Сравнить" HorizontalAlignment="Left" Margin="613,281,0,0" VerticalAlignment="Top" Click="CompareWorker_Click"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="726,282,0,0" VerticalAlignment="Top" Click="ChangeData_Click"/>
+        <StackPanel Margin="700,34,-1,238">
+            <RadioButton x:Name="Check1" Content="Работник 1" IsChecked="True"/>
+            <RadioButton x:Name="Check2" Content="Работник 2" />
+        </StackPanel>
+        <Button Content=" Х " HorizontalAlignment="Left" Margin="739,8,0,0" VerticalAlignment="Top" Click="Exite_Click"/>
+        <Button Content=" ? " HorizontalAlignment="Left" Margin="767,8,0,0" VerticalAlignment="Top" Click="Info_Click" Width="18"/>
+        <Button Content="Сброс" HorizontalAlignment="Left" Margin="725,256,0,0" VerticalAlignment="Top" Click="Reset_Cllick"/>
+
+
+    </Grid>
+</Window>
